@@ -10,3 +10,7 @@ Unit-Tests:
   script:
     - npm install
     - npm test
+Echo:
+  stage: echo
+  script:  
+   - echo "Hello local gitlab-runner"
