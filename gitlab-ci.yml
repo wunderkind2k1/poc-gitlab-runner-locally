@@ -1,0 +1,12 @@
+image: node:latest
+ 
+Build:
+  stage: build
+  script:
+    - docker build .
+
+Unit-Tests:
+  stage: test
+  script:
+    - npm install
+    - npm test
